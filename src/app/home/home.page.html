@@ -17,4 +17,24 @@
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
+
+  <ion-button (click)="onAddTodo()">
+    add
+  </ion-button>>
+    -----------------------
+  <div *ngFor="let itme of $opened | async">
+    {{itme.title}}
+  </div>
+-----------------------------
+  <div *ngFor="let itme of $assigned | async">
+    {{itme.title}}
+  </div>
+
+  <div *ngFor="let itme of $inPorgress | async">
+    {{itme.title}}
+  </div>
+  <div *ngFor="let itme of $complete | async">
+    {{itme.title}}
+  </div>
+
 </ion-content>
