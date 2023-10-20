@@ -1,0 +1,39 @@
+ion-header.header {
+  --background: red !important;
+  box-shadow: none;
+}
+
+ion-toolbar {
+  --background: #6cbaff;
+}
+
+ion-toolbar.search {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+ion-content {
+  --background-color: red;
+}
+
+ion-button {
+  --background: red;
+}
+
+ion-searchbar {
+  background: #6cbaff;
+  padding: 0 2em;
+}
+
+ion-tab-bar {
+  --background: #6cbaff;
+  --color: white;
+}
+
+ion-title {
+  color: white;
+}
+
+ion-icon {
+  color: white;
+}

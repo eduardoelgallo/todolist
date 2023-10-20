@@ -63,7 +63,7 @@ export class StateService {
     /**
      * Recupera la lista con elementos en estado asignado
      */
-    getTotoListInAssigned() {
+    getTotoListAssigned() {
         return this.getTodosByState(TodoListState.ASSIGNED)
     }
 

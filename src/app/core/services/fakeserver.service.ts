@@ -23,7 +23,7 @@ export class FakeserverService {
         if (cacheDatabase) {
             this.database = JSON.parse(cacheDatabase)
         } else {
-            let data = generateRandomDataset(10);
+            let data = generateRandomDataset(400);
             await this.storage.set("database", JSON.stringify(data));
 
             this.database = data;

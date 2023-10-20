@@ -1,0 +1,37 @@
+<ion-header class="header">
+  <ion-toolbar>
+
+    <ion-title>Lista de actividades</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar class="search">
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="open">
+        <ion-icon name="folder-open"></ion-icon>
+        <ion-label>Abiertas</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="assigned">
+        <ion-icon name="people"></ion-icon>
+        <ion-label>Asignadas</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="inprogress">
+        <ion-icon name="hourglass"></ion-icon>
+        <ion-label>En progreso</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="complete">
+        <ion-icon name="checkmark-done"></ion-icon>
+        <ion-label>Completadas</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
