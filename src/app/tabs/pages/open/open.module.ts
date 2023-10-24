@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { OpenPageRoutingModule } from './open-routing.module';
 
 import { OpenPage } from './open.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OpenPageRoutingModule
+    OpenPageRoutingModule,
+    SharedModule
   ],
   declarations: [OpenPage]
 })

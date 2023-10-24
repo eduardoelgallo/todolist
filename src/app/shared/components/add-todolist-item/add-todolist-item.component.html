@@ -1,0 +1,32 @@
+<ion-modal [isOpen]="isOpen">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="onClose()">
+              salir
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Agregar todo</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="onDone()" [disabled]="title == '' || description == ''">
+            Aceptar
+          </ion-button>
+      </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+
+      <ion-list>
+        <ion-item class="ion-margin-bottom">
+          <ion-input label="Titulo"  label-placement="floating" type="text" fill="outline" [(ngModel)]="title"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="description"  label-placement="floating" type="text" fill="outline" [(ngModel)]="description"></ion-input>
+        </ion-item>
+      </ion-list>
+
+
+    </ion-content>
+  </ng-template>
+</ion-modal>

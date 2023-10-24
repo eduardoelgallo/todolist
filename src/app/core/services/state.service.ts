@@ -111,4 +111,27 @@ export class StateService {
         return obs;
     }
 
+    madeFavorite (id: string, favorite: boolean) {
+      let obs = this.connection.updateTodoId(id, {
+        is_favorite: favorite
+      })
+
+      obs.subscribe(
+        todoFromServer => {
+
+
+          let newList = this._todos.getValue().map(item => {
+              if (item.id == todoFromServer[0].id) {
+                return todoFromServer[0]
+              }
+
+              return item
+          })
+
+          this.storage.set("list", JSON.stringify(newList))
+          this._todos.next(newList)
+        }
+      )
+    }
+
 }

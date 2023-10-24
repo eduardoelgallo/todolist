@@ -1,5 +1,6 @@
 export const environment = {
-  production: true,
+  production: false,
   env: 'staging',
-  hostAPI: 'http://staging.todolist.com'
+  webAPI: 'http://staging.todolist.com',
+  fake: true
 };

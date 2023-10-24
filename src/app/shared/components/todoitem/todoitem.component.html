@@ -1,0 +1,8 @@
+<ion-item (click)="onClickTodo()">
+    <ion-icon name="list-circle" slot="start"></ion-icon>
+    <ion-label>
+      <h4>{{data?.title}}</h4>
+      <p>{{data?.description}}</p>
+    </ion-label>
+    <ion-icon name="star" slot="end" [ngClass]="data?.is_favorite ? 'favorite': ''"></ion-icon>
+</ion-item>

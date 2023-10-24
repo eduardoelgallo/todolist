@@ -8,7 +8,7 @@ const createRandomUser = (): TodoList => {
     description: faker.lorem.word(),
     state: faker.number.int({min: 1, max: 4}),
     is_favorite: faker.datatype.boolean(),
-    create_at: faker.date.anytime().toISOString(),
+    created_at: faker.date.anytime().toISOString(),
     latitude: faker.location.latitude(),
     longitude: faker.location.longitude()
   };

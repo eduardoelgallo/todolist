@@ -1,5 +1,14 @@
 <ion-content >
-  <div *ngFor="let itme of $opened | async">
-    {{itme.title}}
+  <div *ngFor="let item of $opened | async">
+    <app-todoitem [data]="item" (onChangeState)="onChangeTodoState($event)"/>
   </div>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="onAddnewTodoItem()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <app-add-todolist-item [isOpen]="showModal" (onResolved)="onDoneModalResolve($event)"/>
+
 </ion-content>

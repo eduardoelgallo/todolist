@@ -1,7 +1,5 @@
 <ion-content>
-
-  <div *ngFor="let itme of $assigned | async">
-    {{itme.title}}
-  </div>
-
+    <div *ngFor="let item of $assigned | async">
+        <app-todoitem [data]="item" (onChangeState)="onChangeTodoState($event)" />
+    </div>
 </ion-content>

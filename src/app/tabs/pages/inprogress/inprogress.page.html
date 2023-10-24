@@ -1,7 +1,7 @@
 
 
 <ion-content>
-  <div *ngFor="let itme of $inPorgress | async">
-    {{itme.title}}
+  <div *ngFor="let item of $inPorgress | async">
+    <app-todoitem [data]="item" (onChangeState)="onChangeTodoState($event)" />
   </div>
 </ion-content>

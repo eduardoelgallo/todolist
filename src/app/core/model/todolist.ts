@@ -1,10 +1,10 @@
 interface TodoList {
-  id: string;
+  id: string ;
   title: string;
   description: string;
   state: number;
   is_favorite: boolean;
-  create_at: string;
+  created_at: string | null;
   latitude: number;
   longitude: number;
 }

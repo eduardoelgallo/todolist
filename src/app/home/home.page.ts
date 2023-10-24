@@ -32,7 +32,7 @@ export class HomePage implements OnInit {
             description: "asdasd",
             state: 1,
             is_favorite: false,
-            create_at: "asdasd",
+            created_at: "asdasd",
             latitude: 1231,
             longitude: 212313,
         })

@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   env: 'develop',
-  hostAPI: 'http://localhost'
+  webAPI: 'https://6440-2806-267-2480-8aa7-ec47-18bc-e86e-ca18.ngrok-free.app/',
+  fake: true
 };
 
 /*

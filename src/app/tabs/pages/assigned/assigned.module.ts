@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { AssignedPageRoutingModule } from './assigned-routing.module';
 
 import { AssignedPage } from './assigned.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AssignedPageRoutingModule
+    AssignedPageRoutingModule,
+    SharedModule
   ],
   declarations: [AssignedPage]
 })
