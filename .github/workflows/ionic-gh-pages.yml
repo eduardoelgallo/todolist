@@ -45,7 +45,7 @@ jobs:
           npm install
       - name: 🔨 Build Project
         run: |
-          ionic build --configuration=staging
+          npm run pages
       - name: List output files
         run: find www/ -print
       - name: Setup Pages
