@@ -41,7 +41,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: 🔨 Build Project
         run: |
-          npm i -g @ionic/cli
+          npm i @ionic/cli
           ionic build
       - name: Setup Pages
         uses: actions/configure-pages@v3
