@@ -39,10 +39,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: 🔨 Build Project
+      - name: 🔨 Install dependence
         run: |
           npm install
           npm i @ionic/cli
+      - name: 🔨 Build Project
+        run: |
           ionic build --configuration=staging
       - name: Setup Pages
         uses: actions/configure-pages@v3
