@@ -41,8 +41,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: 🔨 Install dependence
         run: |
+          npm i -g @ionic/cli
           npm install
-          npm i @ionic/cli
       - name: 🔨 Build Project
         run: |
           ionic build --configuration=staging
