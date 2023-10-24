@@ -46,12 +46,14 @@ jobs:
       - name: 🔨 Build Project
         run: |
           ionic build --configuration=staging
+      - name: List output files
+        run: find www/ -print
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./WWW
+          path: www/
 
   # Deployment job
   deploy:
